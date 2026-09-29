@@ -1,4 +1,5 @@
 """
+Hyrum O. - 2026-06-05
 Este programa debe darle al usuario la opción de elegir una comida de una lista.
 El código asegura que lo ingresado sea legible (en minúsculas) y lo compara con una lista usando lógica if/else.
 Al final, muestra un mensaje explicando de dónde es originaria esa comida.
@@ -28,9 +29,23 @@ comida = comida.lower()
 # Usa una estructura if / elif / else para verificar la comida elegida.
 # Imprime un mensaje con el país de origen para cada comida.
 
+if comida == "tacos":
+    print("Los tacos son típicos de México.")
+elif comida == "arepas":
+    print("Las arepas son típicas de Venezuela y Colombia.")
+elif comida == "ceviche":
+    print("El ceviche es típico de Perú.")
+elif comida == "pupusas":
+    print("Las pupusas son típicas de El Salvador.")
+elif comida == "empanadas":
+    print("Las empanadas son típicas de Argentina.")
+else:
+    print("Lo siento, no tenemos esa comida.")
 
 
 ## Ejemplo de salida esperada:
+
+
 """
 Bienvenido al programa de comidas de Latinoamérica.
 Opciones: tacos, arepas, ceviche, pupusas, empanadas
