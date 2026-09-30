@@ -1,5 +1,4 @@
 """
-Hyrum O. - 2026-06-05
 Este programa debe darle al usuario la opción de elegir una comida de una lista.
 El código asegura que lo ingresado sea legible (en minúsculas) y lo compara con una lista usando lógica if/else.
 Al final, muestra un mensaje explicando de dónde es originaria esa comida.
