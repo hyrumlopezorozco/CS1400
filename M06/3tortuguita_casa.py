@@ -30,25 +30,32 @@ import turtle
 # TODO 1
 #  Iniciar ventana y objeto de tortuga y agregar el speed o velocidad. Pista: Mira la Tarea 1turtle.py
 
-# Escribe aquí tu código
+pantalla = turtle.Screen()
+pantalla.setup(width=400, height=400)
+pantalla.title("Tortuguita Casa")
 
 # TODO 2
 #  Crea la tortuga usando make_turtle().
 #  La ventana debe tener 400 de alto y 400 de ancho.
 
-# Escribe aquí tu código
+tortuga = turtle.Turtle()
+tortuga.speed(1)
 
 # Captura de Pantalla, nombralo "TUNOMBRE_1_2" y guardalo en la carpeta M06
+ #imagnes subidas 
 
 # ------------------------------------------
 # Dibujar una línea
 # ------------------------------------------
+
 
 # TODO 3:
 # Mueve la tortuga hacia adelante 100 pasos.
 # Observa qué sucede.
 
 # Escribe aquí tu código
+
+tortuga.forward(100)
 
 
 # ------------------------------------------
@@ -60,6 +67,9 @@ import turtle
 # Luego avanza otros 100 pasos.
 
 # Escribe aquí tu código
+
+tortuga.left(90)
+tortuga.forward(100)
 
 
 # ------------------------------------------
@@ -78,6 +88,13 @@ print("Dibujando un cuadrado...")
 # La tortuga debe terminar donde empezó.
 
 # Escribe aquí tu código
+
+for _ in range(4):
+
+    tortuga.forward(100)
+
+    tortuga.left(90)
+
 
 
 # ------------------------------------------

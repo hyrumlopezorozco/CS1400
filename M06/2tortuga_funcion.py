@@ -2,8 +2,8 @@
 ====================================================================
 Mi Primera Función en Turtle
 ====================================================================
-NOMBRE: 
-Objetivo:
+NOMBRE: Hyrum 
+Objetivo: 
 Entender cómo encapsular código en una función para reutilizarlo y 
 dibujar figuras personalizadas de manera sencilla.
 
@@ -83,18 +83,28 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 # ==================================================================
 # 4. PREGUNTAS
 # ==================================================================
+
+# ==================================================================
+# 4. PREGUNTAS
+# ==================================================================
 """
-1.  ¿Cuantas funciones hay en este programa? Que proposito tienen? En tus propias palabras agrega comentario completo.
+1. Hay 2 funciones en este programa. La función dibujar_figura() sirve
+para dibujar diferentes figuras usando lados, tamaño y colores.
+La función mover() sirve para mover la tortuga a una posición específica
+sin dibujar.
 
-2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?
+2. El parámetro que se debe cambiar es lados. Para hacer un octágono:
+lados=8
 
-3 ¿En que numero de linea termina la funcion mover?
+3. La función mover termina en la línea 52.
 
-4. Bajo la seccion de pruebas, intenta hacer una nueva figura sin el uso de la funcion dibujar_figura.
+4. Bajo la sección de pruebas, agrega una nueva figura sin usar
+la función dibujar_figura.
 
 5. Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
-      
 """
 
 
 pantalla.exitonclick()
+
+
