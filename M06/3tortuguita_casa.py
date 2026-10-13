@@ -1,3 +1,4 @@
+
 # ==========================================
 # TAREA Turtle 🐢
 # ==========================================
@@ -28,32 +29,30 @@ import turtle
 # ------------------------------------------
 
 # TODO 1
-#  Iniciar ventana y objeto de tortuga y agregar el speed o velocidad. Pista: Mira la Tarea 1turtle.py
+# Iniciar ventana y objeto de tortuga y agregar el speed o velocidad.
 
 pantalla = turtle.Screen()
 pantalla.setup(width=400, height=400)
 pantalla.title("Tortuguita Casa")
 
 # TODO 2
-#  Crea la tortuga usando make_turtle().
-#  La ventana debe tener 400 de alto y 400 de ancho.
+# Crea la tortuga usando turtle.Turtle().
+# La ventana debe tener 400 de alto y 400 de ancho.
 
 tortuga = turtle.Turtle()
 tortuga.speed(1)
 
 # Captura de Pantalla, nombralo "TUNOMBRE_1_2" y guardalo en la carpeta M06
- #imagnes subidas 
+# Guarda aquí la captura cuando hayas ejecutado esta parte del programa.
+
 
 # ------------------------------------------
 # Dibujar una línea
 # ------------------------------------------
 
-
 # TODO 3:
 # Mueve la tortuga hacia adelante 100 pasos.
 # Observa qué sucede.
-
-# Escribe aquí tu código
 
 tortuga.forward(100)
 
@@ -66,14 +65,12 @@ tortuga.forward(100)
 # Gira la tortuga 90 grados hacia la izquierda.
 # Luego avanza otros 100 pasos.
 
-# Escribe aquí tu código
-
 tortuga.left(90)
 tortuga.forward(100)
 
 
 # ------------------------------------------
-# Dibujar un cuadrado 
+# Dibujar un cuadrado
 # ------------------------------------------
 # Un cuadrado tiene:
 # - 4 lados
@@ -87,25 +84,23 @@ print("Dibujando un cuadrado...")
 # Debes usar forward() y left() varias veces.
 # La tortuga debe terminar donde empezó.
 
-# Escribe aquí tu código
-
 for _ in range(4):
-
     tortuga.forward(100)
-
     tortuga.left(90)
-
 
 
 # ------------------------------------------
 # Paso EXTRA (opcional)
 # ------------------------------------------
-# ¿Puedes agregar un triángulo? y un rectangulo? Dibuja una casita.
-#
-# Pista:
-# - Un triángulo tiene 3 lados.
-# - Un giro completo es 360 grados.
-# - ¿Cuánto debe girar en cada esquina?
+# Dibuja una casita con un cuadrado y un triángulo.
+
+# Dibujar el techo triangular
+tortuga.left(90)
+tortuga.forward(100)
+tortuga.left(135)
+tortuga.forward(70.71)
+tortuga.left(90)
+tortuga.forward(70.71)
 
 
 # Mantiene la ventana abierta hasta que hagas clic en ella
