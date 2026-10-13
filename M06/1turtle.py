@@ -1,37 +1,42 @@
-""" TODO 1 agregar tu nombre fecha titulo de una manera bonita """
 
+"""
+Hyrum  Orozco
+Fecha: October 12, 2026
+Título: Mi primera tortuga en Python
+"""
 
 # Importamos la biblioteca turtle (ya viene incluida en Python)
 import turtle
 
 # Configuración de la pantalla y la tortuga
-pantalla = turtle.Screen() # # Usamos sintaxis de punto . para acceder a la función Screen()
-pantalla.bgcolor("lightcyan")  # TODO 2 Cambia el color de fondo usando la función bgcolor()
-pantalla.title("Titulo") #TODO 3 Asigna un título a la ventana usando title()
+pantalla = turtle.Screen()  # Usamos sintaxis de punto para acceder a Screen()
+pantalla.bgcolor("lightcyan")  # TODO 2: Cambia el color de fondo usando bgcolor()
+pantalla.title("Mi primera tortuga en Python")  # TODO 3: Asigna un título usando title()
 
 # Corre el programa hasta este punto utilizando """ """ o # para asegurar que funcione bien.
 
-# solo una t para hacer menos codigo despues. usaremos la t variable para usar otras funciones.
+# Solo una t para hacer menos código después.
 t = turtle.Turtle()
-t.shape("turtle")  # Forma de la tortuga puede ser cualquier otro nombre.
-t.speed(3)         # Velocidad del dibujo (1 es lento, 10 es rápido)
+t.shape("turtle")  # Forma de la tortuga.
+t.speed(3)  # Velocidad del dibujo (1 es lento, 10 es rápido).
 
-# TODO 4 Utiliza """ """ para correr el programa hasta este punto y toma una captura de pantalla. Luego lo guardaras entre la carpeta M6
+# TODO 4: Ejecuta el programa hasta este punto y toma una captura de pantalla.
+# Luego guarda la captura dentro de la carpeta M06.
 
 # =============================================================
 # EJEMPLO: Dibujar la base de la casa (un cuadrado azul)
 # =============================================================
 
-t.color("darkblue", "lightblue")  # (Color del borde, Color de relleno - los puedes ajustar si deseas - TODO 5 los colores son parametros o argumentos?)
+t.color("darkblue", "lightblue")  # TODO 5: Son argumentos de la función color().
 t.begin_fill()
 
-# TODO 6 Este for loop que hace?
+# TODO 6: El for loop repite los movimientos cuatro veces para dibujar un cuadrado.
 for _ in range(4):
-    t.forward(100)  # 
-    t.left(90)      # 
+    t.forward(100)  # Mueve la tortuga 100 unidades hacia adelante.
+    t.left(90)  # Gira la tortuga 90 grados a la izquierda.
 
-# TODO 7 En que linea de codigo empezo el fill? o relleno?
+# TODO 7: El relleno empieza en la línea t.begin_fill().
 t.end_fill()
 
-# Mantiene la ventana abierta hasta que hagas clic en ella
+# Mantiene la ventana abierta hasta que hagas clic en ella.
 pantalla.exitonclick()
