@@ -20,8 +20,12 @@ t = turtle.Turtle()
 t.shape("turtle")  # Forma de la tortuga.
 t.speed(3)  # Velocidad del dibujo (1 es lento, 10 es rápido).
 
+<<<<<<< HEAD
 # TODO 4: Ejecuta el programa hasta este punto y toma una captura de pantalla.
 # Luego guarda la captura dentro de la carpeta M06.
+=======
+# TODO 4 para correr el programa hasta este punto y toma una captura de pantalla. Luego lo guardaras entre la carpeta M6
+>>>>>>> upstream/main
 
 # =============================================================
 # EJEMPLO: Dibujar la base de la casa (un cuadrado azul)

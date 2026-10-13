@@ -39,8 +39,14 @@ def lanzar_dado():
 # --- Bloque para probar tu función ---
 if __name__ == "__main__":
     print("Lanzando el dado 5 veces:")
+<<<<<<< HEAD
 
     # Usamos un bucle para llamar a la función varias veces.
     for i in range(5):
         resultado_lanzamiento = lanzar_dado()
         print(f"Lanzamiento {i + 1}: {resultado_lanzamiento}")
+=======
+    # Usamos un bucle para llamar a la función varias veces
+    for i in range(5):        resultado_lanzamiento = lanzar_dado()
+        print(f"Lanzamiento {i + 1}: {resultado_lanzamiento}")
+>>>>>>> upstream/main
