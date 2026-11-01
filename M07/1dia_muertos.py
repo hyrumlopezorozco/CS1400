@@ -1,5 +1,6 @@
-"""Tarea 1: Preparando la Oferta (Listas y Tuplas)
 
+"""
+Tarea 1: Preparando la Oferta (Listas y Tuplas)
 """
 
 # Tarea 1: Lista de elementos para el altar de muertos
@@ -8,23 +9,40 @@
 ofrendas = ["Pan de muerto", "Flor de cempasúchil", "Velas", "Calaverita de azúcar"]
 
 # Tupla con los niveles tradicionales del altar (constante, no debe cambiar)
-
 NIVELES_ALTAR = ("Cielo", "Tierra", "Inframundo")
 
 # Mostrar la segunda ofrenda (índice 1)
 print("Segunda ofrenda:", ofrendas[1])
 
-"""
-Ejecuta el código. Observa qué elemento se imprime al pedir el índice 1.
-#1. Modificación 1 (Listas): Agrega un nuevo elemento a la lista ofrendas usando
- .append("Incienso copal") y luego ordena la lista alfabéticamente usando
- la función .sort().  ¿Qué notas del variable en linea #12?
+# 1. Modificación 1 (Listas)
+ofrendas.append("Incienso copal")
+ofrendas.sort()
 
-#2. Modificación 2 (Tuplas): Intenta modificar el primer elemento de la tupla escribiendo
- NIVELES_ALTAR[0] = "Gloria".
- ¿Qué sucede al ejecutar el código y por qué no permite realizar este cambio?
+print("\nLista de ofrendas ordenada alfabéticamente:")
+print(ofrendas)
 
-#3. Utiliza la función enumerate() dentro de un bucle for para imprimir cada ofrenda
- de tu lista junto con su número de posición en el altar.
-"""
+# Respuesta 1:
+# La lista se modifica al agregar "Incienso copal" y se ordena alfabéticamente.
+# Las listas son mutables, por lo que se pueden modificar después de crearlas.
+# La variable ofrendas ahora contiene los elementos en orden alfabético.
+
+# 2. Modificación 2 (Tuplas)
+try:
+    NIVELES_ALTAR[0] = "Gloria"
+except TypeError as e:
+    print("\nError al modificar la tupla:", e)
+
+# Respuesta 2:
+# Se produce un TypeError porque las tuplas son inmutables.
+# No se puede cambiar, agregar o eliminar directamente un elemento de una tupla.
+
+# 3. Utilizar enumerate() para mostrar cada ofrenda con su posición
+print("\nOfrendas con su número de posición:")
+
+for posicion, ofrenda in enumerate(ofrendas, start=1):
+    print(f"{posicion}. {ofrenda}")
+
+# Respuesta 3:
+# enumerate() permite recorrer la lista y obtener tanto la posición
+# como el elemento correspondiente en cada iteración.
 
